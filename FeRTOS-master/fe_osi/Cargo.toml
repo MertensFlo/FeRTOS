@@ -1,0 +1,26 @@
+[package]
+name = "fe_osi"
+version = "0.1.1"
+authors = [
+    "Bijan Tabatabai <bijan311@gmail.com>",
+    "Dakota Kitzman <dakota.kitzman@gmail.com>"
+]
+edition = "2021"
+description = "OSI to help with writing code for fe_rtos"
+readme = "../README.md"
+repository = "https://github.com/badrobotics/FeRTOS"
+keywords = ["cortex-m", "rtos"]
+categories = ["embedded", "no-std", "science::robotics"]
+build = "build.rs"
+license = "LGPL-3.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dependencies.cstr_core]
+version = "0.2.1"
+features = ["alloc"]
+
+[build-dependencies]
+cc = "1.0.25"

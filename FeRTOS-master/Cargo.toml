@@ -1,0 +1,10 @@
+[workspace]
+members = [
+	"fe_rtos",
+	"fe_osi",
+	"examples/qemu_project",
+	"examples/fertos_project",
+]
+exclude = [
+    "examples/riscv32_example",
+]
