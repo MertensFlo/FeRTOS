@@ -62,7 +62,7 @@ fn main() -> ! {
         &sc.power_control,
     );
 
-    fe_rtos::arch::arch_setup(&mut cp);
+    //fe_rtos::arch::arch_setup(&mut cp);
 
     let (uart0_tx, uart0_rx) = uart0.split();
 
