@@ -57,9 +57,9 @@ fn panic(panic_info: &PanicInfo<'_>) -> ! {
     }
 
     //Output the panic message if we can be reasonably sure the heap can handle it
-    if let Some(msg) = panic_info.message() {
-        print_msg(format!("{}\n", msg).as_str());
-    }
+    //if let Some(msg) = panic_info.message() {
+    //    print_msg(format!("{}\n", msg).as_str());
+    //}
     unsafe {
         arch::enable_interrupts();
         fe_osi::exit();
