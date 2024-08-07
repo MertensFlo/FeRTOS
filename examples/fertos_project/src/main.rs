@@ -84,10 +84,10 @@ fn main() -> ! {
 
     //It's probably a good idea to have the context switch be the lowest
     //priority interrupt.
-    unsafe {
-        cp.SCB
-            .set_priority(cortex_m::peripheral::scb::SystemHandler::PendSV, 7);
-    }
+    //unsafe {
+    //    cp.SCB
+    //        .set_priority(cortex_m::peripheral::scb::SystemHandler::PendSV, 7);
+    //}
 
     //Start the FeRTOS scheduler
     let enable_systick = |reload: usize| {
